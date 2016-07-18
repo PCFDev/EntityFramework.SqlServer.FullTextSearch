@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.SqlServer.FullTextSearch", "EntityFramework.SqlServer.FullTextSearch\EntityFramework.SqlServer.FullTextSearch.csproj", "{E2597A13-ECCD-45CD-8083-21173181B60B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseNuget|Any CPU = ReleaseNuget|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.ReleaseNuget|Any CPU.ActiveCfg = ReleaseNuget|Any CPU
+		{E2597A13-ECCD-45CD-8083-21173181B60B}.ReleaseNuget|Any CPU.Build.0 = ReleaseNuget|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
