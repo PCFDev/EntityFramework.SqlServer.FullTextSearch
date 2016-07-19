@@ -7,13 +7,15 @@ namespace EntityFramework.SqlServer.FullTextSearch
     public static class QueryableExtensions
     {
         /// <summary>
-        /// 
+        /// Perform a CONTAINS full-text search.
         /// </summary>
-        /// <typeparam name="TSource"></typeparam>
-        /// <param name="source"></param>
-        /// <param name="selector"></param>
-        /// <param name="predicate"></param>
-        /// <returns></returns>
+        /// <typeparam name="TSource">The source query return type.</typeparam>
+        /// <param name="source">The IQueryable of the database linq query.</param>
+        /// <param name="selector">The object property to search, or the object itself for a wildcard search.</param>
+        /// <param name="predicate">The search predicate.</param>
+        /// <returns>An IQueryable for linq chaining.</returns>
+        /// <exception cref="System.ArgumentNullException">If there is no search predicate.</exception>
+        /// <exception cref="System.ArgumentException">If the search predicate is empty.</exception>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1006:DoNotNestGenericTypesInMemberSignatures", Justification = "This is a pattern for LINQ methods.")]
         public static IQueryable<TSource> ContainsSearch<TSource>(this IQueryable<TSource> source, Expression<Func<TSource, object>> selector, string predicate) where TSource : class
         {
@@ -26,13 +28,15 @@ namespace EntityFramework.SqlServer.FullTextSearch
         }
 
         /// <summary>
-        /// 
+        /// Perform a FREETEXT full-text search.
         /// </summary>
-        /// <typeparam name="TSource"></typeparam>
-        /// <param name="source"></param>
-        /// <param name="selector"></param>
-        /// <param name="predicate"></param>
-        /// <returns></returns>
+        /// <typeparam name="TSource">The source query return type.</typeparam>
+        /// <param name="source">The IQueryable of the database linq query.</param>
+        /// <param name="selector">The object property to search, or the object itself for a wildcard search.</param>
+        /// <param name="predicate">The search predicate.</param>
+        /// <returns>An IQueryable for linq chaining.</returns>
+        /// <exception cref="System.ArgumentNullException">If there is no search predicate.</exception>
+        /// <exception cref="System.ArgumentException">If the search predicate is empty.</exception>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1006:DoNotNestGenericTypesInMemberSignatures", Justification = "This is a pattern for LINQ methods.")]
         public static IQueryable<TSource> FreeTextSearch<TSource>(this IQueryable<TSource> source, Expression<Func<TSource, object>> selector, string predicate) where TSource : class
         {
