@@ -11,7 +11,7 @@ namespace EntityFramework.SqlServer.FullTextSearch
         /// </summary>
         /// <typeparam name="TSource">The source query return type.</typeparam>
         /// <param name="source">The IQueryable of the database linq query.</param>
-        /// <param name="selector">The object property to search, or the object itself for a wildcard search.</param>
+        /// <param name="selector">The object property corresponding to a table column to search, or the object itself for a wildcard search.</param>
         /// <param name="predicate">The search predicate.</param>
         /// <returns>An IQueryable for linq chaining.</returns>
         /// <exception cref="System.ArgumentNullException">If there is no search predicate.</exception>
@@ -32,7 +32,7 @@ namespace EntityFramework.SqlServer.FullTextSearch
         /// </summary>
         /// <typeparam name="TSource">The source query return type.</typeparam>
         /// <param name="source">The IQueryable of the database linq query.</param>
-        /// <param name="selector">The object property to search, or the object itself for a wildcard search.</param>
+        /// <param name="selector">The object property corresponding to a table column to search, or the object itself for a wildcard search.</param>
         /// <param name="predicate">The search predicate.</param>
         /// <returns>An IQueryable for linq chaining.</returns>
         /// <exception cref="System.ArgumentNullException">If there is no search predicate.</exception>
